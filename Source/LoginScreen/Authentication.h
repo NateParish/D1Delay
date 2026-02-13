@@ -7,7 +7,8 @@
 // Public repo note:
 // The production version includes a commercial licensing/auth system.
 // This repository uses a local stub so the demo project builds and runs without network dependencies.
-// To use the authentication system, you will add your logic to this class. The "locked" variable is what controls whether the app runs or goes to the login page.
+// To use the authentication system, you will add your logic to this class. The "locked" variable is
+// what controls whether the app runs or goes to the login page.
 
 
 class AuthenticationLock
