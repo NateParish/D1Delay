@@ -8,8 +8,6 @@ A fully custom-built digital delay plugin developed with **JUCE 8** (C++).
 
 ## Screenshots
 
-> Place screenshots in `docs/screenshots/` and keep the filenames below.
-
 ### Delay View
 ![Delay Screen](docs/screenshots/delay-screen.png)
 
