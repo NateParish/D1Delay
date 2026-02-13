@@ -13,11 +13,8 @@ Desktop.ini
 ############################################################
 # JUCE / Projucer build output
 ############################################################
-# Projucer exports IDE projects into Builds/ by default
 Builds/
 **/Builds/
-
-# Common build output folders (if you ever export elsewhere)
 bin/
 build/
 Build/
@@ -51,8 +48,6 @@ DerivedData/
 *.dSYM
 *.dSYM.zip
 *.dSYM.tar
-
-# Per-user Xcode settings
 xcuserdata/
 **/xcuserdata/
 
@@ -66,12 +61,11 @@ xcuserdata/
 *.sln.docstates
 *.VC.db
 *.VC.VC.opendb
-
 .vscode/
 *.code-workspace
 
 ############################################################
-# CMake (if you later add CMake builds)
+# CMake (optional)
 ############################################################
 CMakeFiles/
 CMakeCache.txt
@@ -80,7 +74,7 @@ Makefile
 compile_commands.json
 
 ############################################################
-# Clang / IntelliSense / tooling caches
+# Binaries / temp
 ############################################################
 *.pch
 *.gch
@@ -94,10 +88,6 @@ compile_commands.json
 *.exe
 *.app
 *.pkg
-
-############################################################
-# Logs and temp files
-############################################################
 *.log
 *.tmp
 *.temp
@@ -105,14 +95,11 @@ compile_commands.json
 *.swo
 
 ############################################################
-# Optional: installer/signing output (keep out of git)
+# Installer/signing output
 ############################################################
 Signed Files/
 signed/
 installers/
 *.iss~
 
-############################################################
-# Optional: if you generate docs/screenshots locally
-############################################################
 docs/_build/
