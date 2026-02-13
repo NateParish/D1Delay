@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="uBewcL" name="D1Delay" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginFormats="buildAU,buildStandalone,buildVST3"
+              pluginVST3Category="Delay" pluginAAXCategory="16">
+  <MAINGROUP id="V1HzAL" name="D1Delay">
+    <GROUP id="{4EA93C1E-6465-7223-84EB-AA3E12525A13}" name="Assets">
+      <GROUP id="{16AA8558-B004-801A-71CB-C2FA0B1026EF}" name="knobs">
+        <FILE id="NVUGkq" name="BlackKnob1_0.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_0.png"/>
+        <FILE id="qQJVyt" name="BlackKnob1_1.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_1.png"/>
+        <FILE id="LOyiD1" name="BlackKnob1_2.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_2.png"/>
+        <FILE id="irfG4s" name="BlackKnob1_3.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_3.png"/>
+        <FILE id="yUrFoq" name="BlackKnob1_4.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_4.png"/>
+        <FILE id="PphSGQ" name="BlackKnob1_5.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_5.png"/>
+        <FILE id="lAKZD8" name="BlackKnob1_6.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_6.png"/>
+        <FILE id="i8TT16" name="BlackKnob1_7.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_7.png"/>
+        <FILE id="hmRevA" name="BlackKnob1_8.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_8.png"/>
+        <FILE id="aBEgB5" name="BlackKnob1_9.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_9.png"/>
+        <FILE id="gqGTmT" name="BlackKnob1_10.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_10.png"/>
+        <FILE id="M4Xi4F" name="BlackKnob1_11.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_11.png"/>
+        <FILE id="muM3rD" name="BlackKnob1_12.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_12.png"/>
+        <FILE id="rjAHjb" name="BlackKnob1_13.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_13.png"/>
+        <FILE id="rhPTpX" name="BlackKnob1_14.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_14.png"/>
+        <FILE id="XCY3Qz" name="BlackKnob1_15.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_15.png"/>
+        <FILE id="ca5LNA" name="BlackKnob1_16.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_16.png"/>
+        <FILE id="MZbgOa" name="BlackKnob1_17.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_17.png"/>
+        <FILE id="Vzvisf" name="BlackKnob1_18.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_18.png"/>
+        <FILE id="CgV4Xp" name="BlackKnob1_19.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_19.png"/>
+        <FILE id="GQC4xk" name="BlackKnob1_20.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_20.png"/>
+        <FILE id="hN2UIw" name="BlackKnob1_21.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_21.png"/>
+        <FILE id="gyeI6w" name="BlackKnob1_22.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_22.png"/>
+        <FILE id="s9vCBy" name="BlackKnob1_23.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_23.png"/>
+        <FILE id="I3LB6t" name="BlackKnob1_24.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_24.png"/>
+        <FILE id="h5Y3vC" name="BlackKnob1_25.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_25.png"/>
+        <FILE id="olUY6l" name="BlackKnob1_26.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_26.png"/>
+        <FILE id="dP4EQl" name="BlackKnob1_27.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_27.png"/>
+        <FILE id="kClBHS" name="BlackKnob1_28.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_28.png"/>
+        <FILE id="arR87H" name="BlackKnob1_29.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_29.png"/>
+        <FILE id="ZpXNeP" name="BlackKnob1_30.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_30.png"/>
+        <FILE id="VLObS2" name="BlackKnob1_31.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_31.png"/>
+        <FILE id="mtOp8l" name="BlackKnob1_32.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_32.png"/>
+        <FILE id="xVTODc" name="BlackKnob1_33.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_33.png"/>
+        <FILE id="nnoaLp" name="BlackKnob1_34.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_34.png"/>
+        <FILE id="LAh0q0" name="BlackKnob1_35.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_35.png"/>
+        <FILE id="lg7Jcl" name="BlackKnob1_36.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_36.png"/>
+        <FILE id="NsxctM" name="BlackKnob1_37.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_37.png"/>
+        <FILE id="IoPGSU" name="BlackKnob1_38.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_38.png"/>
+        <FILE id="plWO05" name="BlackKnob1_39.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_39.png"/>
+        <FILE id="bCG1cK" name="BlackKnob1_40.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_40.png"/>
+        <FILE id="awPuUa" name="BlackKnob1_41.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_41.png"/>
+        <FILE id="VL4V14" name="BlackKnob1_42.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_42.png"/>
+        <FILE id="fCBKyg" name="BlackKnob1_43.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_43.png"/>
+        <FILE id="eSnhtG" name="BlackKnob1_44.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_44.png"/>
+        <FILE id="kDinFG" name="BlackKnob1_45.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_45.png"/>
+        <FILE id="ZyCv3d" name="BlackKnob1_46.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_46.png"/>
+        <FILE id="G9SL8F" name="BlackKnob1_47.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_47.png"/>
+        <FILE id="orpfy2" name="BlackKnob1_48.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_48.png"/>
+        <FILE id="tRebit" name="BlackKnob1_49.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_49.png"/>
+        <FILE id="Xju8p4" name="BlackKnob1_50.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_50.png"/>
+        <FILE id="ylla48" name="BlackKnob1_51.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_51.png"/>
+        <FILE id="C6Z8BT" name="BlackKnob1_52.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_52.png"/>
+        <FILE id="fs4kR3" name="BlackKnob1_53.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_53.png"/>
+        <FILE id="e1Ay34" name="BlackKnob1_54.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_54.png"/>
+        <FILE id="FM6TYR" name="BlackKnob1_55.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_55.png"/>
+        <FILE id="jHKEPb" name="BlackKnob1_56.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_56.png"/>
+        <FILE id="Wo02w8" name="BlackKnob1_57.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_57.png"/>
+        <FILE id="NqVzKP" name="BlackKnob1_58.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_58.png"/>
+        <FILE id="qHkzyY" name="BlackKnob1_59.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_59.png"/>
+        <FILE id="FZxX53" name="BlackKnob1_60.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_60.png"/>
+        <FILE id="o0WQeD" name="BlackKnob1_61.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_61.png"/>
+        <FILE id="Eo2cip" name="BlackKnob1_62.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_62.png"/>
+        <FILE id="Pc7jeh" name="BlackKnob1_63.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_63.png"/>
+        <FILE id="PlrskV" name="BlackKnob1_64.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_64.png"/>
+        <FILE id="AfOmhE" name="BlackKnob1_65.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_65.png"/>
+        <FILE id="LYrPBQ" name="BlackKnob1_66.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_66.png"/>
+        <FILE id="Zm9VGW" name="BlackKnob1_67.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_67.png"/>
+        <FILE id="JXq6Og" name="BlackKnob1_68.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_68.png"/>
+        <FILE id="HGWh3E" name="BlackKnob1_69.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_69.png"/>
+        <FILE id="ew8XL1" name="BlackKnob1_70.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_70.png"/>
+        <FILE id="ktFXaL" name="BlackKnob1_71.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_71.png"/>
+        <FILE id="mYapf0" name="BlackKnob1_72.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_72.png"/>
+        <FILE id="OzMqFQ" name="BlackKnob1_73.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_73.png"/>
+        <FILE id="FF1HQ5" name="BlackKnob1_74.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_74.png"/>
+        <FILE id="BBD59I" name="BlackKnob1_75.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_75.png"/>
+        <FILE id="Zdw7AE" name="BlackKnob1_76.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_76.png"/>
+        <FILE id="NzrvPg" name="BlackKnob1_77.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_77.png"/>
+        <FILE id="pXxiFv" name="BlackKnob1_78.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_78.png"/>
+        <FILE id="wfO7nT" name="BlackKnob1_79.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_79.png"/>
+        <FILE id="gLG6CZ" name="BlackKnob1_80.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_80.png"/>
+        <FILE id="mH4Jq8" name="BlackKnob1_81.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_81.png"/>
+        <FILE id="YbA5yr" name="BlackKnob1_82.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_82.png"/>
+        <FILE id="Xs48uJ" name="BlackKnob1_83.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_83.png"/>
+        <FILE id="GzGWkm" name="BlackKnob1_84.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_84.png"/>
+        <FILE id="zedN5F" name="BlackKnob1_85.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_85.png"/>
+        <FILE id="X5GOJB" name="BlackKnob1_86.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_86.png"/>
+        <FILE id="cpcf6U" name="BlackKnob1_87.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_87.png"/>
+        <FILE id="vMicdS" name="BlackKnob1_88.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_88.png"/>
+        <FILE id="bH4xoR" name="BlackKnob1_89.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_89.png"/>
+        <FILE id="W9FZn8" name="BlackKnob1_90.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_90.png"/>
+        <FILE id="UR0Vtk" name="BlackKnob1_91.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_91.png"/>
+        <FILE id="PcQxAW" name="BlackKnob1_92.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_92.png"/>
+        <FILE id="vtwt9q" name="BlackKnob1_93.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_93.png"/>
+        <FILE id="NIJNgE" name="BlackKnob1_94.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_94.png"/>
+        <FILE id="J9YwNd" name="BlackKnob1_95.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_95.png"/>
+        <FILE id="AxUSWw" name="BlackKnob1_96.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_96.png"/>
+        <FILE id="vum5fk" name="BlackKnob1_97.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_97.png"/>
+        <FILE id="HO4RNv" name="BlackKnob1_98.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_98.png"/>
+        <FILE id="JyoNUE" name="BlackKnob1_99.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_99.png"/>
+        <FILE id="u4VnbV" name="BlackKnob1_100.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_100.png"/>
+        <FILE id="TPeJQz" name="BlackKnob1_101.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_101.png"/>
+        <FILE id="aYyNli" name="BlackKnob1_102.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_102.png"/>
+        <FILE id="jMJLn3" name="BlackKnob1_103.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_103.png"/>
+        <FILE id="hTNwdx" name="BlackKnob1_104.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_104.png"/>
+        <FILE id="pfLllM" name="BlackKnob1_105.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_105.png"/>
+        <FILE id="UXk6cL" name="BlackKnob1_106.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_106.png"/>
+        <FILE id="uitw79" name="BlackKnob1_107.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_107.png"/>
+        <FILE id="Kllm9V" name="BlackKnob1_108.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_108.png"/>
+        <FILE id="VqUuJv" name="BlackKnob1_109.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_109.png"/>
+        <FILE id="FgjAR7" name="BlackKnob1_110.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_110.png"/>
+        <FILE id="ocTkaz" name="BlackKnob1_111.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_111.png"/>
+        <FILE id="go6bPM" name="BlackKnob1_112.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_112.png"/>
+        <FILE id="QMDs7O" name="BlackKnob1_113.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_113.png"/>
+        <FILE id="FgOxv1" name="BlackKnob1_114.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_114.png"/>
+        <FILE id="Owvb0l" name="BlackKnob1_115.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_115.png"/>
+        <FILE id="kCEcOp" name="BlackKnob1_116.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_116.png"/>
+        <FILE id="CHysAW" name="BlackKnob1_117.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_117.png"/>
+        <FILE id="IydXNh" name="BlackKnob1_118.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_118.png"/>
+        <FILE id="tWIOAk" name="BlackKnob1_119.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_119.png"/>
+        <FILE id="TkKX1p" name="BlackKnob1_120.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_120.png"/>
+        <FILE id="TOgEF9" name="BlackKnob1_121.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_121.png"/>
+        <FILE id="AmAjnt" name="BlackKnob1_122.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_122.png"/>
+        <FILE id="R3mmru" name="BlackKnob1_123.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_123.png"/>
+        <FILE id="XRYXzY" name="BlackKnob1_124.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_124.png"/>
+        <FILE id="Xu8OFB" name="BlackKnob1_125.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_125.png"/>
+        <FILE id="cztlmx" name="BlackKnob1_126.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_126.png"/>
+        <FILE id="uxq79l" name="BlackKnob1_127.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_127.png"/>
+        <FILE id="z8nDol" name="BlackKnob1_128.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_128.png"/>
+        <FILE id="oc9NKr" name="BlackKnob1_129.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_129.png"/>
+        <FILE id="wW61t4" name="BlackKnob1_130.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_130.png"/>
+        <FILE id="eRGj3K" name="BlackKnob1_131.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_131.png"/>
+        <FILE id="DwR4AJ" name="BlackKnob1_132.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_132.png"/>
+        <FILE id="VPhFGe" name="BlackKnob1_133.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_133.png"/>
+        <FILE id="CZGpwO" name="BlackKnob1_134.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_134.png"/>
+        <FILE id="zysJ1J" name="BlackKnob1_135.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_135.png"/>
+        <FILE id="AR6zBA" name="BlackKnob1_136.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_136.png"/>
+        <FILE id="rGmKOB" name="BlackKnob1_137.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_137.png"/>
+        <FILE id="ZVpNwg" name="BlackKnob1_138.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_138.png"/>
+        <FILE id="LMnBSV" name="BlackKnob1_139.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_139.png"/>
+        <FILE id="AE5SYj" name="BlackKnob1_140.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_140.png"/>
+        <FILE id="ERYAA2" name="BlackKnob1_141.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_141.png"/>
+        <FILE id="vUQjOw" name="BlackKnob1_142.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_142.png"/>
+        <FILE id="BjTqW8" name="BlackKnob1_143.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_143.png"/>
+        <FILE id="Tj92Vp" name="BlackKnob1_144.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_144.png"/>
+        <FILE id="mH2w4m" name="BlackKnob1_145.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_145.png"/>
+        <FILE id="UPTv7j" name="BlackKnob1_146.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_146.png"/>
+        <FILE id="L9xFfW" name="BlackKnob1_147.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_147.png"/>
+        <FILE id="xoOGom" name="BlackKnob1_148.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_148.png"/>
+        <FILE id="MefvY2" name="BlackKnob1_149.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_149.png"/>
+        <FILE id="Pkdh7k" name="BlackKnob1_150.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_150.png"/>
+        <FILE id="Si98WF" name="BlackKnob1_151.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_151.png"/>
+        <FILE id="DqFeJJ" name="BlackKnob1_152.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_152.png"/>
+        <FILE id="tyPHSA" name="BlackKnob1_153.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_153.png"/>
+        <FILE id="LLGHWt" name="BlackKnob1_154.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_154.png"/>
+        <FILE id="vL8Fto" name="BlackKnob1_155.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_155.png"/>
+        <FILE id="K4EzkU" name="BlackKnob1_156.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_156.png"/>
+        <FILE id="bS7AzO" name="BlackKnob1_157.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_157.png"/>
+        <FILE id="OWIfa9" name="BlackKnob1_158.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_158.png"/>
+        <FILE id="M7BqeY" name="BlackKnob1_159.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_159.png"/>
+        <FILE id="QPrteC" name="BlackKnob1_160.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_160.png"/>
+        <FILE id="LYUyX4" name="BlackKnob1_161.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_161.png"/>
+        <FILE id="fmKUMb" name="BlackKnob1_162.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_162.png"/>
+        <FILE id="wLsdLz" name="BlackKnob1_163.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_163.png"/>
+        <FILE id="eOYuIR" name="BlackKnob1_164.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_164.png"/>
+        <FILE id="NsEovN" name="BlackKnob1_165.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_165.png"/>
+        <FILE id="PMkRqY" name="BlackKnob1_166.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_166.png"/>
+        <FILE id="dAgdLU" name="BlackKnob1_167.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_167.png"/>
+        <FILE id="hOemNW" name="BlackKnob1_168.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_168.png"/>
+        <FILE id="etyHQB" name="BlackKnob1_169.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_169.png"/>
+        <FILE id="MFzi3h" name="BlackKnob1_170.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_170.png"/>
+        <FILE id="BYRweg" name="BlackKnob1_171.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_171.png"/>
+        <FILE id="cSiMjc" name="BlackKnob1_172.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_172.png"/>
+        <FILE id="vhPyKP" name="BlackKnob1_173.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_173.png"/>
+        <FILE id="MME8oO" name="BlackKnob1_174.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_174.png"/>
+        <FILE id="NPDEvn" name="BlackKnob1_175.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_175.png"/>
+        <FILE id="sQ3Q07" name="BlackKnob1_176.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_176.png"/>
+        <FILE id="WKfXgw" name="BlackKnob1_177.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_177.png"/>
+        <FILE id="xiUEwf" name="BlackKnob1_178.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_178.png"/>
+        <FILE id="zbv8kE" name="BlackKnob1_179.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_179.png"/>
+        <FILE id="oCMxRf" name="BlackKnob1_180.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_180.png"/>
+        <FILE id="CCPNKQ" name="BlackKnob1_181.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_181.png"/>
+        <FILE id="UNtcO3" name="BlackKnob1_182.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_182.png"/>
+        <FILE id="Un4fsk" name="BlackKnob1_183.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_183.png"/>
+        <FILE id="lJUpPX" name="BlackKnob1_184.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_184.png"/>
+        <FILE id="dJFelW" name="BlackKnob1_185.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_185.png"/>
+        <FILE id="MpTPer" name="BlackKnob1_186.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_186.png"/>
+        <FILE id="Hb95R5" name="BlackKnob1_187.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_187.png"/>
+        <FILE id="mehaI9" name="BlackKnob1_188.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_188.png"/>
+        <FILE id="aC56fJ" name="BlackKnob1_189.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_189.png"/>
+        <FILE id="i6eAK1" name="BlackKnob1_190.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_190.png"/>
+        <FILE id="Gg8TDt" name="BlackKnob1_191.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_191.png"/>
+        <FILE id="ghLhfM" name="BlackKnob1_192.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_192.png"/>
+        <FILE id="PjXk1j" name="BlackKnob1_193.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_193.png"/>
+        <FILE id="zv8lbz" name="BlackKnob1_194.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_194.png"/>
+        <FILE id="aR1tF6" name="BlackKnob1_195.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_195.png"/>
+        <FILE id="zxLOQ3" name="BlackKnob1_196.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_196.png"/>
+        <FILE id="zvZcHs" name="BlackKnob1_197.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_197.png"/>
+        <FILE id="OAqHYt" name="BlackKnob1_198.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_198.png"/>
+        <FILE id="U15tGr" name="BlackKnob1_199.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_199.png"/>
+        <FILE id="efZsMi" name="BlackKnob1_200.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_200.png"/>
+        <FILE id="CpAaYj" name="BlackKnob1_201.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_201.png"/>
+        <FILE id="pNGhNs" name="BlackKnob1_202.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_202.png"/>
+        <FILE id="Qz4ms6" name="BlackKnob1_203.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_203.png"/>
+        <FILE id="Agzjju" name="BlackKnob1_204.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_204.png"/>
+        <FILE id="d7i229" name="BlackKnob1_205.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_205.png"/>
+        <FILE id="yTINxP" name="BlackKnob1_206.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_206.png"/>
+        <FILE id="cycRvK" name="BlackKnob1_207.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_207.png"/>
+        <FILE id="pvceyY" name="BlackKnob1_208.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_208.png"/>
+        <FILE id="lzd0rW" name="BlackKnob1_209.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_209.png"/>
+        <FILE id="fq9fHn" name="BlackKnob1_210.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_210.png"/>
+        <FILE id="sXtFEv" name="BlackKnob1_211.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_211.png"/>
+        <FILE id="wQWU4w" name="BlackKnob1_212.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_212.png"/>
+        <FILE id="TXSxPl" name="BlackKnob1_213.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_213.png"/>
+        <FILE id="yb0wrf" name="BlackKnob1_214.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_214.png"/>
+        <FILE id="iiOmJi" name="BlackKnob1_215.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_215.png"/>
+        <FILE id="LdZrYi" name="BlackKnob1_216.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_216.png"/>
+        <FILE id="RKr2FU" name="BlackKnob1_217.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_217.png"/>
+        <FILE id="KEKsz9" name="BlackKnob1_218.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_218.png"/>
+        <FILE id="E0AV9Z" name="BlackKnob1_219.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_219.png"/>
+        <FILE id="n7Uji8" name="BlackKnob1_220.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_220.png"/>
+        <FILE id="n20dLR" name="BlackKnob1_221.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_221.png"/>
+        <FILE id="qkfDLn" name="BlackKnob1_222.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_222.png"/>
+        <FILE id="Rp1pGa" name="BlackKnob1_223.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_223.png"/>
+        <FILE id="cjOvny" name="BlackKnob1_224.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_224.png"/>
+        <FILE id="zbChYq" name="BlackKnob1_225.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_225.png"/>
+        <FILE id="G8DE0k" name="BlackKnob1_226.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_226.png"/>
+        <FILE id="TTflK9" name="BlackKnob1_227.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_227.png"/>
+        <FILE id="f0yGZU" name="BlackKnob1_228.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_228.png"/>
+        <FILE id="mg6lyP" name="BlackKnob1_229.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_229.png"/>
+        <FILE id="N1tDJz" name="BlackKnob1_230.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_230.png"/>
+        <FILE id="yOrKD3" name="BlackKnob1_231.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_231.png"/>
+        <FILE id="EuslR5" name="BlackKnob1_232.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_232.png"/>
+        <FILE id="zslCzr" name="BlackKnob1_233.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_233.png"/>
+        <FILE id="NueskN" name="BlackKnob1_234.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_234.png"/>
+        <FILE id="JVOBFs" name="BlackKnob1_235.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_235.png"/>
+        <FILE id="G3yInv" name="BlackKnob1_236.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_236.png"/>
+        <FILE id="f22f14" name="BlackKnob1_237.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_237.png"/>
+        <FILE id="PBFScj" name="BlackKnob1_238.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_238.png"/>
+        <FILE id="U1knQ8" name="BlackKnob1_239.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_239.png"/>
+        <FILE id="TCSkiH" name="BlackKnob1_240.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_240.png"/>
+        <FILE id="IG0QXw" name="BlackKnob1_241.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_241.png"/>
+        <FILE id="T02SpE" name="BlackKnob1_242.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_242.png"/>
+        <FILE id="NUqzN3" name="BlackKnob1_243.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_243.png"/>
+        <FILE id="dAZcsm" name="BlackKnob1_244.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_244.png"/>
+        <FILE id="fvLODs" name="BlackKnob1_245.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_245.png"/>
+        <FILE id="PadvgD" name="BlackKnob1_246.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_246.png"/>
+        <FILE id="qIh29H" name="BlackKnob1_247.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_247.png"/>
+        <FILE id="eGrzmV" name="BlackKnob1_248.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_248.png"/>
+        <FILE id="XjBYir" name="BlackKnob1_249.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_249.png"/>
+        <FILE id="sr3fxq" name="BlackKnob1_250.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_250.png"/>
+        <FILE id="twjYfE" name="BlackKnob1_251.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_251.png"/>
+        <FILE id="EXTk1n" name="BlackKnob1_252.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_252.png"/>
+        <FILE id="C9wxLd" name="BlackKnob1_253.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_253.png"/>
+        <FILE id="mAbaKs" name="BlackKnob1_254.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_254.png"/>
+        <FILE id="TITKtp" name="BlackKnob1_255.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_255.png"/>
+        <FILE id="vudEAD" name="BlackKnob1_256.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_256.png"/>
+        <FILE id="cdSnGh" name="BlackKnob1_257.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_257.png"/>
+        <FILE id="cKXFNp" name="BlackKnob1_258.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_258.png"/>
+        <FILE id="JEBOoD" name="BlackKnob1_259.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_259.png"/>
+        <FILE id="WHVHsE" name="BlackKnob1_260.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_260.png"/>
+        <FILE id="ed3mzx" name="BlackKnob1_261.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_261.png"/>
+        <FILE id="VC2LxY" name="BlackKnob1_262.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_262.png"/>
+        <FILE id="iSeC28" name="BlackKnob1_263.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_263.png"/>
+        <FILE id="maK216" name="BlackKnob1_264.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_264.png"/>
+        <FILE id="ZBUiDs" name="BlackKnob1_265.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_265.png"/>
+        <FILE id="yZNErl" name="BlackKnob1_266.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_266.png"/>
+        <FILE id="hLgfkB" name="BlackKnob1_267.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_267.png"/>
+        <FILE id="alu6ng" name="BlackKnob1_268.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_268.png"/>
+        <FILE id="XyggmE" name="BlackKnob1_269.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_269.png"/>
+        <FILE id="qt3DX8" name="BlackKnob1_270.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_270.png"/>
+        <FILE id="QNFcQa" name="BlackKnob1_271.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_271.png"/>
+        <FILE id="bqzV15" name="BlackKnob1_272.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_272.png"/>
+        <FILE id="FLOmde" name="BlackKnob1_273.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_273.png"/>
+        <FILE id="ayOlxa" name="BlackKnob1_274.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_274.png"/>
+        <FILE id="Ql2lCY" name="BlackKnob1_275.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_275.png"/>
+        <FILE id="qvh9nr" name="BlackKnob1_276.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_276.png"/>
+        <FILE id="HlHkyT" name="BlackKnob1_277.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_277.png"/>
+        <FILE id="tOrbs3" name="BlackKnob1_278.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_278.png"/>
+        <FILE id="tFbF1l" name="BlackKnob1_279.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_279.png"/>
+        <FILE id="eBjpZm" name="BlackKnob1_280.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_280.png"/>
+        <FILE id="JQOsxo" name="BlackKnob1_281.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_281.png"/>
+        <FILE id="bRrYtq" name="BlackKnob1_282.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_282.png"/>
+        <FILE id="MfjiCg" name="BlackKnob1_283.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_283.png"/>
+        <FILE id="Oe3cOo" name="BlackKnob1_284.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_284.png"/>
+        <FILE id="Kg1qao" name="BlackKnob1_285.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_285.png"/>
+        <FILE id="uuAQMF" name="BlackKnob1_286.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_286.png"/>
+        <FILE id="pCpMzf" name="BlackKnob1_287.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_287.png"/>
+        <FILE id="PJ33ig" name="BlackKnob1_288.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_288.png"/>
+        <FILE id="QjbzS9" name="BlackKnob1_289.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_289.png"/>
+        <FILE id="fnuqkl" name="BlackKnob1_290.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_290.png"/>
+        <FILE id="n3hoft" name="BlackKnob1_291.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_291.png"/>
+        <FILE id="Xwse0S" name="BlackKnob1_292.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_292.png"/>
+        <FILE id="mjuOz1" name="BlackKnob1_293.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_293.png"/>
+        <FILE id="bKbxgC" name="BlackKnob1_294.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_294.png"/>
+        <FILE id="jleDKa" name="BlackKnob1_295.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_295.png"/>
+        <FILE id="Q5strR" name="BlackKnob1_296.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_296.png"/>
+        <FILE id="WLkMM1" name="BlackKnob1_297.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_297.png"/>
+        <FILE id="jyJZY1" name="BlackKnob1_298.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_298.png"/>
+        <FILE id="iW1RmL" name="BlackKnob1_299.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_299.png"/>
+        <FILE id="DI3N23" name="BlackKnob1_300.png" compile="0" resource="1"
+              file="Assets/knobs/BlackKnob1_300.png"/>
+      </GROUP>
+      <GROUP id="{82023A82-E305-0C27-9D95-3AFC0490C4AF}" name="untitled folder"/>
+      <FILE id="zqDAbX" name="AccountIcon.svg" compile="0" resource="1" file="Assets/AccountIcon.svg"/>
+      <FILE id="i1M8UH" name="D1Delay.png" compile="0" resource="1" file="Assets/D1Delay.png"/>
+      <FILE id="IN8PyH" name="Floor.png" compile="0" resource="1" file="Assets/Floor.png"/>
+      <FILE id="BAWabM" name="logo.svg" compile="0" resource="1" file="Assets/logo.svg"/>
+      <FILE id="M0fjaP" name="MenuIcon.svg" compile="0" resource="1" file="Assets/MenuIcon.svg"/>
+      <FILE id="sszOh1" name="MenuIconBright.svg" compile="0" resource="1"
+            file="Assets/MenuIconBright.svg"/>
+      <FILE id="yFVHSJ" name="SwitchDown.png" compile="0" resource="1" file="Assets/SwitchDown.png"/>
+      <FILE id="LdwRp4" name="SwitchUp.png" compile="0" resource="1" file="Assets/SwitchUp.png"/>
+      <FILE id="hyNIM9" name="VisibilityOff.svg" compile="0" resource="1"
+            file="Assets/VisibilityOff.svg"/>
+      <FILE id="uSS3yu" name="VisibilityOn.svg" compile="0" resource="1"
+            file="Assets/VisibilityOn.svg"/>
+    </GROUP>
+    <GROUP id="{0377F787-DE1C-AF29-8FB5-8158F3609015}" name="Source">
+      <FILE id="RsCcqD" name="AppGUI.h" compile="0" resource="0" file="Source/AppGUI.h"/>
+      <FILE id="BdrCnH" name="BpmSelections.h" compile="0" resource="0" file="Source/BpmSelections.h"/>
+      <FILE id="MIzPQE" name="Components.h" compile="0" resource="0" file="Source/Components.h"/>
+      <FILE id="QBhpti" name="CustomLF.h" compile="0" resource="0" file="Source/CustomLF.h"/>
+      <FILE id="VsWudd" name="DelayDrawing.h" compile="0" resource="0" file="Source/DelayDrawing.h"/>
+      <FILE id="cjgfWV" name="DrawableComponent.h" compile="0" resource="0"
+            file="Source/DrawableComponent.h"/>
+      <FILE id="smrbNO" name="Drawing.h" compile="0" resource="0" file="Source/Drawing.h"/>
+      <FILE id="V6K4ar" name="EffectBaseImage.h" compile="0" resource="0"
+            file="Source/EffectBaseImage.h"/>
+      <FILE id="oUkJ5j" name="EQDrawing.h" compile="0" resource="0" file="Source/EQDrawing.h"/>
+      <FILE id="Q68uwn" name="FloorImage.h" compile="0" resource="0" file="Source/FloorImage.h"/>
+      <GROUP id="{0021A47C-EBBF-2E93-1843-FCA27486EC25}" name="LoginScreen">
+        <FILE id="GdTydY" name="Authentication.h" compile="0" resource="0"
+              file="Source/LoginScreen/Authentication.h"/>
+        <FILE id="j1tXJx" name="ErrorComponent.h" compile="0" resource="0"
+              file="Source/LoginScreen/ErrorComponent.h"/>
+        <FILE id="eAa5Aj" name="LicenseExpired.h" compile="0" resource="0"
+              file="Source/LoginScreen/LicenseExpired.h"/>
+        <FILE id="V1gvaS" name="LoadingComponent.h" compile="0" resource="0"
+              file="Source/LoginScreen/LoadingComponent.h"/>
+        <FILE id="fa2Eeb" name="LoginComponent.h" compile="0" resource="0"
+              file="Source/LoginScreen/LoginComponent.h"/>
+        <FILE id="FkerlO" name="LoginScreen.h" compile="0" resource="0" file="Source/LoginScreen/LoginScreen.h"/>
+        <FILE id="EZRHQ9" name="LoginScreenBackgroundLogo.h" compile="0" resource="0"
+              file="Source/LoginScreen/LoginScreenBackgroundLogo.h"/>
+        <FILE id="nuvvs9" name="LoginScreenSoundwaveAnimation.h" compile="0"
+              resource="0" file="Source/LoginScreen/LoginScreenSoundwaveAnimation.h"/>
+        <FILE id="agRLTG" name="NoLicense.h" compile="0" resource="0" file="Source/LoginScreen/NoLicense.h"/>
+        <FILE id="MOu3Zh" name="TooManyInstalls.h" compile="0" resource="0"
+              file="Source/LoginScreen/TooManyInstalls.h"/>
+        <FILE id="Qw5A9i" name="TransparancyLayer.h" compile="0" resource="0"
+              file="Source/LoginScreen/TransparancyLayer.h"/>
+        <FILE id="u4iji8" name="VisibilityButton.h" compile="0" resource="0"
+              file="Source/LoginScreen/VisibilityButton.h"/>
+        <FILE id="CleKsi" name="VisOnOffImage.h" compile="0" resource="0" file="Source/LoginScreen/VisOnOffImage.h"/>
+        <FILE id="hE6kC3" name="WelcomeComponent.h" compile="0" resource="0"
+              file="Source/LoginScreen/WelcomeComponent.h"/>
+      </GROUP>
+      <FILE id="g0hrB3" name="MenuBar.h" compile="0" resource="0" file="Source/MenuBar.h"/>
+      <FILE id="sSoSAh" name="Presets.h" compile="0" resource="0" file="Source/Presets.h"/>
+      <FILE id="yXs2Jj" name="ThemeColors.h" compile="0" resource="0" file="Source/ThemeColors.h"/>
+      <FILE id="UuBHuR" name="ToggleSwitch.h" compile="0" resource="0" file="Source/ToggleSwitch.h"/>
+      <FILE id="GlhcHD" name="WidthDrawing.h" compile="0" resource="0" file="Source/WidthDrawing.h"/>
+      <FILE id="Tlhk1u" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="YI3O8D" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="BLb1kU" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="MckhBu" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="NewProject"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="NewProject"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="NewProject"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="NewProject"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>

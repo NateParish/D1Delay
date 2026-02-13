@@ -1,0 +1,703 @@
+#pragma once
+#include <JuceHeader.h>
+#include <iostream>
+
+class KnobImage : public juce::LookAndFeel_V3,
+    public juce::Component
+
+{
+
+private:
+
+    float rangeFactor = 1;
+    float minKnobValue = 0;
+    float maxKnobValue = 1;
+    float imageCount = 301;
+    juce::String labelEnding = "";
+
+    
+            juce::Image currentImage;
+    
+            juce::Image image_0 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_0_png, BinaryData::BlackKnob1_0_pngSize);
+            juce::Image image_1 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_1_png, BinaryData::BlackKnob1_1_pngSize);
+            juce::Image image_2 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_2_png, BinaryData::BlackKnob1_2_pngSize);
+            juce::Image image_3 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_3_png, BinaryData::BlackKnob1_3_pngSize);
+            juce::Image image_4 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_4_png, BinaryData::BlackKnob1_4_pngSize);
+            juce::Image image_5 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_5_png, BinaryData::BlackKnob1_5_pngSize);
+            juce::Image image_6 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_6_png, BinaryData::BlackKnob1_6_pngSize);
+            juce::Image image_7 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_7_png, BinaryData::BlackKnob1_7_pngSize);
+            juce::Image image_8 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_8_png, BinaryData::BlackKnob1_8_pngSize);
+            juce::Image image_9 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_9_png, BinaryData::BlackKnob1_9_pngSize);
+            juce::Image image_10 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_10_png, BinaryData::BlackKnob1_10_pngSize);
+            juce::Image image_11 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_11_png, BinaryData::BlackKnob1_11_pngSize);
+            juce::Image image_12 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_12_png, BinaryData::BlackKnob1_12_pngSize);
+            juce::Image image_13 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_13_png, BinaryData::BlackKnob1_13_pngSize);
+            juce::Image image_14 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_14_png, BinaryData::BlackKnob1_14_pngSize);
+            juce::Image image_15 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_15_png, BinaryData::BlackKnob1_15_pngSize);
+            juce::Image image_16 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_16_png, BinaryData::BlackKnob1_16_pngSize);
+            juce::Image image_17 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_17_png, BinaryData::BlackKnob1_17_pngSize);
+            juce::Image image_18 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_18_png, BinaryData::BlackKnob1_18_pngSize);
+            juce::Image image_19 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_19_png, BinaryData::BlackKnob1_19_pngSize);
+            juce::Image image_20 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_20_png, BinaryData::BlackKnob1_20_pngSize);
+            juce::Image image_21 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_21_png, BinaryData::BlackKnob1_21_pngSize);
+            juce::Image image_22 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_22_png, BinaryData::BlackKnob1_22_pngSize);
+            juce::Image image_23 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_23_png, BinaryData::BlackKnob1_23_pngSize);
+            juce::Image image_24 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_24_png, BinaryData::BlackKnob1_24_pngSize);
+            juce::Image image_25 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_25_png, BinaryData::BlackKnob1_25_pngSize);
+            juce::Image image_26 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_26_png, BinaryData::BlackKnob1_26_pngSize);
+            juce::Image image_27 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_27_png, BinaryData::BlackKnob1_27_pngSize);
+            juce::Image image_28 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_28_png, BinaryData::BlackKnob1_28_pngSize);
+            juce::Image image_29 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_29_png, BinaryData::BlackKnob1_29_pngSize);
+            juce::Image image_30 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_30_png, BinaryData::BlackKnob1_30_pngSize);
+            juce::Image image_31 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_31_png, BinaryData::BlackKnob1_31_pngSize);
+            juce::Image image_32 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_32_png, BinaryData::BlackKnob1_32_pngSize);
+            juce::Image image_33 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_33_png, BinaryData::BlackKnob1_33_pngSize);
+            juce::Image image_34 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_34_png, BinaryData::BlackKnob1_34_pngSize);
+            juce::Image image_35 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_35_png, BinaryData::BlackKnob1_35_pngSize);
+            juce::Image image_36 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_36_png, BinaryData::BlackKnob1_36_pngSize);
+            juce::Image image_37 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_37_png, BinaryData::BlackKnob1_37_pngSize);
+            juce::Image image_38 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_38_png, BinaryData::BlackKnob1_38_pngSize);
+            juce::Image image_39 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_39_png, BinaryData::BlackKnob1_39_pngSize);
+            juce::Image image_40 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_40_png, BinaryData::BlackKnob1_40_pngSize);
+            juce::Image image_41 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_41_png, BinaryData::BlackKnob1_41_pngSize);
+            juce::Image image_42 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_42_png, BinaryData::BlackKnob1_42_pngSize);
+            juce::Image image_43 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_43_png, BinaryData::BlackKnob1_43_pngSize);
+            juce::Image image_44 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_44_png, BinaryData::BlackKnob1_44_pngSize);
+            juce::Image image_45 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_45_png, BinaryData::BlackKnob1_45_pngSize);
+            juce::Image image_46 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_46_png, BinaryData::BlackKnob1_46_pngSize);
+            juce::Image image_47 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_47_png, BinaryData::BlackKnob1_47_pngSize);
+            juce::Image image_48 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_48_png, BinaryData::BlackKnob1_48_pngSize);
+            juce::Image image_49 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_49_png, BinaryData::BlackKnob1_49_pngSize);
+            juce::Image image_50 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_50_png, BinaryData::BlackKnob1_50_pngSize);
+            juce::Image image_51 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_51_png, BinaryData::BlackKnob1_51_pngSize);
+            juce::Image image_52 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_52_png, BinaryData::BlackKnob1_52_pngSize);
+            juce::Image image_53 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_53_png, BinaryData::BlackKnob1_53_pngSize);
+            juce::Image image_54 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_54_png, BinaryData::BlackKnob1_54_pngSize);
+            juce::Image image_55 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_55_png, BinaryData::BlackKnob1_55_pngSize);
+            juce::Image image_56 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_56_png, BinaryData::BlackKnob1_56_pngSize);
+            juce::Image image_57 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_57_png, BinaryData::BlackKnob1_57_pngSize);
+            juce::Image image_58 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_58_png, BinaryData::BlackKnob1_58_pngSize);
+            juce::Image image_59 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_59_png, BinaryData::BlackKnob1_59_pngSize);
+            juce::Image image_60 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_60_png, BinaryData::BlackKnob1_60_pngSize);
+            juce::Image image_61 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_61_png, BinaryData::BlackKnob1_61_pngSize);
+            juce::Image image_62 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_62_png, BinaryData::BlackKnob1_62_pngSize);
+            juce::Image image_63 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_63_png, BinaryData::BlackKnob1_63_pngSize);
+            juce::Image image_64 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_64_png, BinaryData::BlackKnob1_64_pngSize);
+            juce::Image image_65 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_65_png, BinaryData::BlackKnob1_65_pngSize);
+            juce::Image image_66 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_66_png, BinaryData::BlackKnob1_66_pngSize);
+            juce::Image image_67 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_67_png, BinaryData::BlackKnob1_67_pngSize);
+            juce::Image image_68 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_68_png, BinaryData::BlackKnob1_68_pngSize);
+            juce::Image image_69 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_69_png, BinaryData::BlackKnob1_69_pngSize);
+            juce::Image image_70 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_70_png, BinaryData::BlackKnob1_70_pngSize);
+            juce::Image image_71 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_71_png, BinaryData::BlackKnob1_71_pngSize);
+            juce::Image image_72 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_72_png, BinaryData::BlackKnob1_72_pngSize);
+            juce::Image image_73 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_73_png, BinaryData::BlackKnob1_73_pngSize);
+            juce::Image image_74 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_74_png, BinaryData::BlackKnob1_74_pngSize);
+            juce::Image image_75 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_75_png, BinaryData::BlackKnob1_75_pngSize);
+            juce::Image image_76 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_76_png, BinaryData::BlackKnob1_76_pngSize);
+            juce::Image image_77 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_77_png, BinaryData::BlackKnob1_77_pngSize);
+            juce::Image image_78 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_78_png, BinaryData::BlackKnob1_78_pngSize);
+            juce::Image image_79 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_79_png, BinaryData::BlackKnob1_79_pngSize);
+            juce::Image image_80 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_80_png, BinaryData::BlackKnob1_80_pngSize);
+            juce::Image image_81 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_81_png, BinaryData::BlackKnob1_81_pngSize);
+            juce::Image image_82 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_82_png, BinaryData::BlackKnob1_82_pngSize);
+            juce::Image image_83 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_83_png, BinaryData::BlackKnob1_83_pngSize);
+            juce::Image image_84 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_84_png, BinaryData::BlackKnob1_84_pngSize);
+            juce::Image image_85 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_85_png, BinaryData::BlackKnob1_85_pngSize);
+            juce::Image image_86 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_86_png, BinaryData::BlackKnob1_86_pngSize);
+            juce::Image image_87 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_87_png, BinaryData::BlackKnob1_87_pngSize);
+            juce::Image image_88 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_88_png, BinaryData::BlackKnob1_88_pngSize);
+            juce::Image image_89 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_89_png, BinaryData::BlackKnob1_89_pngSize);
+            juce::Image image_90 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_90_png, BinaryData::BlackKnob1_90_pngSize);
+            juce::Image image_91 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_91_png, BinaryData::BlackKnob1_91_pngSize);
+            juce::Image image_92 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_92_png, BinaryData::BlackKnob1_92_pngSize);
+            juce::Image image_93 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_93_png, BinaryData::BlackKnob1_93_pngSize);
+            juce::Image image_94 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_94_png, BinaryData::BlackKnob1_94_pngSize);
+            juce::Image image_95 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_95_png, BinaryData::BlackKnob1_95_pngSize);
+            juce::Image image_96 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_96_png, BinaryData::BlackKnob1_96_pngSize);
+            juce::Image image_97 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_97_png, BinaryData::BlackKnob1_97_pngSize);
+            juce::Image image_98 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_98_png, BinaryData::BlackKnob1_98_pngSize);
+            juce::Image image_99 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_99_png, BinaryData::BlackKnob1_99_pngSize);
+            juce::Image image_100 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_100_png, BinaryData::BlackKnob1_100_pngSize);
+            juce::Image image_101 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_101_png, BinaryData::BlackKnob1_101_pngSize);
+            juce::Image image_102 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_102_png, BinaryData::BlackKnob1_102_pngSize);
+            juce::Image image_103 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_103_png, BinaryData::BlackKnob1_103_pngSize);
+            juce::Image image_104 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_104_png, BinaryData::BlackKnob1_104_pngSize);
+            juce::Image image_105 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_105_png, BinaryData::BlackKnob1_105_pngSize);
+            juce::Image image_106 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_106_png, BinaryData::BlackKnob1_106_pngSize);
+            juce::Image image_107 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_107_png, BinaryData::BlackKnob1_107_pngSize);
+            juce::Image image_108 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_108_png, BinaryData::BlackKnob1_108_pngSize);
+            juce::Image image_109 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_109_png, BinaryData::BlackKnob1_109_pngSize);
+            juce::Image image_110 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_110_png, BinaryData::BlackKnob1_110_pngSize);
+            juce::Image image_111 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_111_png, BinaryData::BlackKnob1_111_pngSize);
+            juce::Image image_112 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_112_png, BinaryData::BlackKnob1_112_pngSize);
+            juce::Image image_113 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_113_png, BinaryData::BlackKnob1_113_pngSize);
+            juce::Image image_114 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_114_png, BinaryData::BlackKnob1_114_pngSize);
+            juce::Image image_115 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_115_png, BinaryData::BlackKnob1_115_pngSize);
+            juce::Image image_116 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_116_png, BinaryData::BlackKnob1_116_pngSize);
+            juce::Image image_117 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_117_png, BinaryData::BlackKnob1_117_pngSize);
+            juce::Image image_118 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_118_png, BinaryData::BlackKnob1_118_pngSize);
+            juce::Image image_119 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_119_png, BinaryData::BlackKnob1_119_pngSize);
+            juce::Image image_120 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_120_png, BinaryData::BlackKnob1_120_pngSize);
+            juce::Image image_121 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_121_png, BinaryData::BlackKnob1_121_pngSize);
+            juce::Image image_122 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_122_png, BinaryData::BlackKnob1_122_pngSize);
+            juce::Image image_123 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_123_png, BinaryData::BlackKnob1_123_pngSize);
+            juce::Image image_124 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_124_png, BinaryData::BlackKnob1_124_pngSize);
+            juce::Image image_125 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_125_png, BinaryData::BlackKnob1_125_pngSize);
+            juce::Image image_126 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_126_png, BinaryData::BlackKnob1_126_pngSize);
+            juce::Image image_127 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_127_png, BinaryData::BlackKnob1_127_pngSize);
+            juce::Image image_128 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_128_png, BinaryData::BlackKnob1_128_pngSize);
+            juce::Image image_129 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_129_png, BinaryData::BlackKnob1_129_pngSize);
+            juce::Image image_130 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_130_png, BinaryData::BlackKnob1_130_pngSize);
+            juce::Image image_131 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_131_png, BinaryData::BlackKnob1_131_pngSize);
+            juce::Image image_132 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_132_png, BinaryData::BlackKnob1_132_pngSize);
+            juce::Image image_133 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_133_png, BinaryData::BlackKnob1_133_pngSize);
+            juce::Image image_134 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_134_png, BinaryData::BlackKnob1_134_pngSize);
+            juce::Image image_135 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_135_png, BinaryData::BlackKnob1_135_pngSize);
+            juce::Image image_136 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_136_png, BinaryData::BlackKnob1_136_pngSize);
+            juce::Image image_137 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_137_png, BinaryData::BlackKnob1_137_pngSize);
+            juce::Image image_138 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_138_png, BinaryData::BlackKnob1_138_pngSize);
+            juce::Image image_139 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_139_png, BinaryData::BlackKnob1_139_pngSize);
+            juce::Image image_140 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_140_png, BinaryData::BlackKnob1_140_pngSize);
+            juce::Image image_141 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_141_png, BinaryData::BlackKnob1_141_pngSize);
+            juce::Image image_142 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_142_png, BinaryData::BlackKnob1_142_pngSize);
+            juce::Image image_143 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_143_png, BinaryData::BlackKnob1_143_pngSize);
+            juce::Image image_144 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_144_png, BinaryData::BlackKnob1_144_pngSize);
+            juce::Image image_145 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_145_png, BinaryData::BlackKnob1_145_pngSize);
+            juce::Image image_146 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_146_png, BinaryData::BlackKnob1_146_pngSize);
+            juce::Image image_147 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_147_png, BinaryData::BlackKnob1_147_pngSize);
+            juce::Image image_148 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_148_png, BinaryData::BlackKnob1_148_pngSize);
+            juce::Image image_149 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_149_png, BinaryData::BlackKnob1_149_pngSize);
+            juce::Image image_150 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_150_png, BinaryData::BlackKnob1_150_pngSize);
+            juce::Image image_151 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_151_png, BinaryData::BlackKnob1_151_pngSize);
+            juce::Image image_152 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_152_png, BinaryData::BlackKnob1_152_pngSize);
+            juce::Image image_153 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_153_png, BinaryData::BlackKnob1_153_pngSize);
+            juce::Image image_154 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_154_png, BinaryData::BlackKnob1_154_pngSize);
+            juce::Image image_155 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_155_png, BinaryData::BlackKnob1_155_pngSize);
+            juce::Image image_156 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_156_png, BinaryData::BlackKnob1_156_pngSize);
+            juce::Image image_157 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_157_png, BinaryData::BlackKnob1_157_pngSize);
+            juce::Image image_158 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_158_png, BinaryData::BlackKnob1_158_pngSize);
+            juce::Image image_159 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_159_png, BinaryData::BlackKnob1_159_pngSize);
+            juce::Image image_160 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_160_png, BinaryData::BlackKnob1_160_pngSize);
+            juce::Image image_161 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_161_png, BinaryData::BlackKnob1_161_pngSize);
+            juce::Image image_162 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_162_png, BinaryData::BlackKnob1_162_pngSize);
+            juce::Image image_163 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_163_png, BinaryData::BlackKnob1_163_pngSize);
+            juce::Image image_164 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_164_png, BinaryData::BlackKnob1_164_pngSize);
+            juce::Image image_165 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_165_png, BinaryData::BlackKnob1_165_pngSize);
+            juce::Image image_166 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_166_png, BinaryData::BlackKnob1_166_pngSize);
+            juce::Image image_167 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_167_png, BinaryData::BlackKnob1_167_pngSize);
+            juce::Image image_168 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_168_png, BinaryData::BlackKnob1_168_pngSize);
+            juce::Image image_169 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_169_png, BinaryData::BlackKnob1_169_pngSize);
+            
+        juce::Image image_170 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_170_png, BinaryData::BlackKnob1_170_pngSize);
+        juce::Image image_171 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_171_png, BinaryData::BlackKnob1_171_pngSize);
+        juce::Image image_172 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_172_png, BinaryData::BlackKnob1_172_pngSize);
+        juce::Image image_173 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_173_png, BinaryData::BlackKnob1_173_pngSize);
+        juce::Image image_174 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_174_png, BinaryData::BlackKnob1_174_pngSize);
+        juce::Image image_175 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_175_png, BinaryData::BlackKnob1_175_pngSize);
+        juce::Image image_176 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_176_png, BinaryData::BlackKnob1_176_pngSize);
+        juce::Image image_177 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_177_png, BinaryData::BlackKnob1_177_pngSize);
+        juce::Image image_178 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_178_png, BinaryData::BlackKnob1_178_pngSize);
+        juce::Image image_179 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_179_png, BinaryData::BlackKnob1_179_pngSize);
+        juce::Image image_180 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_180_png, BinaryData::BlackKnob1_180_pngSize);
+        juce::Image image_181 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_181_png, BinaryData::BlackKnob1_181_pngSize);
+        juce::Image image_182 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_182_png, BinaryData::BlackKnob1_182_pngSize);
+        juce::Image image_183 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_183_png, BinaryData::BlackKnob1_183_pngSize);
+        juce::Image image_184 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_184_png, BinaryData::BlackKnob1_184_pngSize);
+        juce::Image image_185 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_185_png, BinaryData::BlackKnob1_185_pngSize);
+        juce::Image image_186 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_186_png, BinaryData::BlackKnob1_186_pngSize);
+        juce::Image image_187 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_187_png, BinaryData::BlackKnob1_187_pngSize);
+        juce::Image image_188 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_188_png, BinaryData::BlackKnob1_188_pngSize);
+        juce::Image image_189 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_189_png, BinaryData::BlackKnob1_189_pngSize);
+        juce::Image image_190 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_190_png, BinaryData::BlackKnob1_190_pngSize);
+        juce::Image image_191 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_191_png, BinaryData::BlackKnob1_191_pngSize);
+        juce::Image image_192 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_192_png, BinaryData::BlackKnob1_192_pngSize);
+        juce::Image image_193 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_193_png, BinaryData::BlackKnob1_193_pngSize);
+        juce::Image image_194 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_194_png, BinaryData::BlackKnob1_194_pngSize);
+        juce::Image image_195 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_195_png, BinaryData::BlackKnob1_195_pngSize);
+        juce::Image image_196 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_196_png, BinaryData::BlackKnob1_196_pngSize);
+        juce::Image image_197 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_197_png, BinaryData::BlackKnob1_197_pngSize);
+        juce::Image image_198 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_198_png, BinaryData::BlackKnob1_198_pngSize);
+        juce::Image image_199 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_199_png, BinaryData::BlackKnob1_199_pngSize);
+        juce::Image image_200 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_200_png, BinaryData::BlackKnob1_200_pngSize);
+        juce::Image image_201 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_201_png, BinaryData::BlackKnob1_201_pngSize);
+        juce::Image image_202 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_202_png, BinaryData::BlackKnob1_202_pngSize);
+        juce::Image image_203 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_203_png, BinaryData::BlackKnob1_203_pngSize);
+        juce::Image image_204 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_204_png, BinaryData::BlackKnob1_204_pngSize);
+        juce::Image image_205 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_205_png, BinaryData::BlackKnob1_205_pngSize);
+        juce::Image image_206 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_206_png, BinaryData::BlackKnob1_206_pngSize);
+        juce::Image image_207 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_207_png, BinaryData::BlackKnob1_207_pngSize);
+        juce::Image image_208 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_208_png, BinaryData::BlackKnob1_208_pngSize);
+        juce::Image image_209 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_209_png, BinaryData::BlackKnob1_209_pngSize);
+        juce::Image image_210 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_210_png, BinaryData::BlackKnob1_210_pngSize);
+        juce::Image image_211 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_211_png, BinaryData::BlackKnob1_211_pngSize);
+        juce::Image image_212 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_212_png, BinaryData::BlackKnob1_212_pngSize);
+        juce::Image image_213 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_213_png, BinaryData::BlackKnob1_213_pngSize);
+        juce::Image image_214 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_214_png, BinaryData::BlackKnob1_214_pngSize);
+        juce::Image image_215 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_215_png, BinaryData::BlackKnob1_215_pngSize);
+        juce::Image image_216 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_216_png, BinaryData::BlackKnob1_216_pngSize);
+        juce::Image image_217 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_217_png, BinaryData::BlackKnob1_217_pngSize);
+        juce::Image image_218 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_218_png, BinaryData::BlackKnob1_218_pngSize);
+        juce::Image image_219 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_219_png, BinaryData::BlackKnob1_219_pngSize);
+        juce::Image image_220 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_220_png, BinaryData::BlackKnob1_220_pngSize);
+        juce::Image image_221 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_221_png, BinaryData::BlackKnob1_221_pngSize);
+        juce::Image image_222 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_222_png, BinaryData::BlackKnob1_222_pngSize);
+        juce::Image image_223 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_223_png, BinaryData::BlackKnob1_223_pngSize);
+        juce::Image image_224 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_224_png, BinaryData::BlackKnob1_224_pngSize);
+        juce::Image image_225 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_225_png, BinaryData::BlackKnob1_225_pngSize);
+        juce::Image image_226 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_226_png, BinaryData::BlackKnob1_226_pngSize);
+        juce::Image image_227 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_227_png, BinaryData::BlackKnob1_227_pngSize);
+        juce::Image image_228 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_228_png, BinaryData::BlackKnob1_228_pngSize);
+        juce::Image image_229 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_229_png, BinaryData::BlackKnob1_229_pngSize);
+        juce::Image image_230 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_230_png, BinaryData::BlackKnob1_230_pngSize);
+        juce::Image image_231 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_231_png, BinaryData::BlackKnob1_231_pngSize);
+        juce::Image image_232 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_232_png, BinaryData::BlackKnob1_232_pngSize);
+        juce::Image image_233 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_233_png, BinaryData::BlackKnob1_233_pngSize);
+        juce::Image image_234 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_234_png, BinaryData::BlackKnob1_234_pngSize);
+        juce::Image image_235 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_235_png, BinaryData::BlackKnob1_235_pngSize);
+        juce::Image image_236 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_236_png, BinaryData::BlackKnob1_236_pngSize);
+        juce::Image image_237 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_237_png, BinaryData::BlackKnob1_237_pngSize);
+        juce::Image image_238 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_238_png, BinaryData::BlackKnob1_238_pngSize);
+        juce::Image image_239 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_239_png, BinaryData::BlackKnob1_239_pngSize);
+        juce::Image image_240 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_240_png, BinaryData::BlackKnob1_240_pngSize);
+        juce::Image image_241 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_241_png, BinaryData::BlackKnob1_241_pngSize);
+        juce::Image image_242 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_242_png, BinaryData::BlackKnob1_242_pngSize);
+        juce::Image image_243 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_243_png, BinaryData::BlackKnob1_243_pngSize);
+        juce::Image image_244 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_244_png, BinaryData::BlackKnob1_244_pngSize);
+        juce::Image image_245 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_245_png, BinaryData::BlackKnob1_245_pngSize);
+        juce::Image image_246 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_246_png, BinaryData::BlackKnob1_246_pngSize);
+        juce::Image image_247 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_247_png, BinaryData::BlackKnob1_247_pngSize);
+        juce::Image image_248 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_248_png, BinaryData::BlackKnob1_248_pngSize);
+        juce::Image image_249 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_249_png, BinaryData::BlackKnob1_249_pngSize);
+        juce::Image image_250 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_250_png, BinaryData::BlackKnob1_250_pngSize);
+        juce::Image image_251 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_251_png, BinaryData::BlackKnob1_251_pngSize);
+        juce::Image image_252 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_252_png, BinaryData::BlackKnob1_252_pngSize);
+        juce::Image image_253 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_253_png, BinaryData::BlackKnob1_253_pngSize);
+        juce::Image image_254 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_254_png, BinaryData::BlackKnob1_254_pngSize);
+        juce::Image image_255 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_255_png, BinaryData::BlackKnob1_255_pngSize);
+        juce::Image image_256 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_256_png, BinaryData::BlackKnob1_256_pngSize);
+        juce::Image image_257 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_257_png, BinaryData::BlackKnob1_257_pngSize);
+        juce::Image image_258 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_258_png, BinaryData::BlackKnob1_258_pngSize);
+        juce::Image image_259 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_259_png, BinaryData::BlackKnob1_259_pngSize);
+        juce::Image image_260 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_260_png, BinaryData::BlackKnob1_260_pngSize);
+        juce::Image image_261 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_261_png, BinaryData::BlackKnob1_261_pngSize);
+        juce::Image image_262 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_262_png, BinaryData::BlackKnob1_262_pngSize);
+        juce::Image image_263 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_263_png, BinaryData::BlackKnob1_263_pngSize);
+        juce::Image image_264 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_264_png, BinaryData::BlackKnob1_264_pngSize);
+        juce::Image image_265 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_265_png, BinaryData::BlackKnob1_265_pngSize);
+        juce::Image image_266 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_266_png, BinaryData::BlackKnob1_266_pngSize);
+        juce::Image image_267 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_267_png, BinaryData::BlackKnob1_267_pngSize);
+        juce::Image image_268 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_268_png, BinaryData::BlackKnob1_268_pngSize);
+        juce::Image image_269 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_269_png, BinaryData::BlackKnob1_269_pngSize);
+        juce::Image image_270 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_270_png, BinaryData::BlackKnob1_270_pngSize);
+        juce::Image image_271 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_271_png, BinaryData::BlackKnob1_271_pngSize);
+        juce::Image image_272 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_272_png, BinaryData::BlackKnob1_272_pngSize);
+        juce::Image image_273 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_273_png, BinaryData::BlackKnob1_273_pngSize);
+        juce::Image image_274 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_274_png, BinaryData::BlackKnob1_274_pngSize);
+        juce::Image image_275 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_275_png, BinaryData::BlackKnob1_275_pngSize);
+        juce::Image image_276 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_276_png, BinaryData::BlackKnob1_276_pngSize);
+        juce::Image image_277 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_277_png, BinaryData::BlackKnob1_277_pngSize);
+        juce::Image image_278 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_278_png, BinaryData::BlackKnob1_278_pngSize);
+        juce::Image image_279 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_279_png, BinaryData::BlackKnob1_279_pngSize);
+        juce::Image image_280 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_280_png, BinaryData::BlackKnob1_280_pngSize);
+        juce::Image image_281 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_281_png, BinaryData::BlackKnob1_281_pngSize);
+        juce::Image image_282 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_282_png, BinaryData::BlackKnob1_282_pngSize);
+        juce::Image image_283 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_283_png, BinaryData::BlackKnob1_283_pngSize);
+        juce::Image image_284 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_284_png, BinaryData::BlackKnob1_284_pngSize);
+        juce::Image image_285 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_285_png, BinaryData::BlackKnob1_285_pngSize);
+        juce::Image image_286 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_286_png, BinaryData::BlackKnob1_286_pngSize);
+        juce::Image image_287 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_287_png, BinaryData::BlackKnob1_287_pngSize);
+        juce::Image image_288 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_288_png, BinaryData::BlackKnob1_288_pngSize);
+        juce::Image image_289 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_289_png, BinaryData::BlackKnob1_289_pngSize);
+        juce::Image image_290 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_290_png, BinaryData::BlackKnob1_290_pngSize);
+        juce::Image image_291 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_291_png, BinaryData::BlackKnob1_291_pngSize);
+        juce::Image image_292 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_292_png, BinaryData::BlackKnob1_292_pngSize);
+        juce::Image image_293 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_293_png, BinaryData::BlackKnob1_293_pngSize);
+        juce::Image image_294 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_294_png, BinaryData::BlackKnob1_294_pngSize);
+        juce::Image image_295 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_295_png, BinaryData::BlackKnob1_295_pngSize);
+        juce::Image image_296 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_296_png, BinaryData::BlackKnob1_296_pngSize);
+        juce::Image image_297 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_297_png, BinaryData::BlackKnob1_297_pngSize);
+        juce::Image image_298 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_298_png, BinaryData::BlackKnob1_298_pngSize);
+        juce::Image image_299 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_299_png, BinaryData::BlackKnob1_299_pngSize);
+        juce::Image image_300 = juce::ImageCache::getFromMemory(BinaryData::BlackKnob1_300_png, BinaryData::BlackKnob1_300_pngSize);
+
+
+
+
+    std::vector<juce::Image*> listOfImages;
+
+
+public:
+
+    void drawRotarySlider(juce::Graphics& g, int x, int y, int width, int height, float sliderPos,
+        const float rotaryStartAngle, const float rotaryEndAngle, juce::Slider& slider)
+    {
+        float lineThickness = width*.20;
+        float borderWidth = width*.03;
+        
+        g.setColour(juce::Colour(20, 20, 25));
+        g.drawEllipse(lineThickness/2, lineThickness/2, width-lineThickness, width-lineThickness,lineThickness);
+        g.drawImage(currentImage, borderWidth, borderWidth, width - 2*borderWidth, height - 2*borderWidth, 0,0, currentImage.getWidth(), currentImage.getHeight());
+    }
+
+    
+    
+    void updateImage(float input)
+    {
+        
+        rangeFactor = maxKnobValue - minKnobValue;
+    
+        
+        float imagesPerInputUnit = imageCount / rangeFactor;
+        float newImageNumber = imagesPerInputUnit * (input - minKnobValue);
+        //DBG("Input " << input << " Images: " << imagesPerInputUnit <<" NEW IMAGE NUMBER: " << newImageNumber);
+        int roundedInput = static_cast<int>(newImageNumber);
+        if (roundedInput < 0) roundedInput = 0;
+        if (roundedInput > 300) roundedInput = 300;
+        
+
+        switch (roundedInput)
+        {
+            case 0: currentImage = image_0; break;
+            case 1: currentImage = image_1; break;
+            case 2: currentImage = image_2; break;
+            case 3: currentImage = image_3; break;
+            case 4: currentImage = image_4; break;
+            case 5: currentImage = image_5; break;
+            case 6: currentImage = image_6; break;
+            case 7: currentImage = image_7; break;
+            case 8: currentImage = image_8; break;
+            case 9: currentImage = image_9; break;
+            case 10: currentImage = image_10; break;
+            case 11: currentImage = image_11; break;
+            case 12: currentImage = image_12; break;
+            case 13: currentImage = image_13; break;
+            case 14: currentImage = image_14; break;
+            case 15: currentImage = image_15; break;
+            case 16: currentImage = image_16; break;
+            case 17: currentImage = image_17; break;
+            case 18: currentImage = image_18; break;
+            case 19: currentImage = image_19; break;
+            case 20: currentImage = image_20; break;
+            case 21: currentImage = image_21; break;
+            case 22: currentImage = image_22; break;
+            case 23: currentImage = image_23; break;
+            case 24: currentImage = image_24; break;
+            case 25: currentImage = image_25; break;
+            case 26: currentImage = image_26; break;
+            case 27: currentImage = image_27; break;
+            case 28: currentImage = image_28; break;
+            case 29: currentImage = image_29; break;
+            case 30: currentImage = image_30; break;
+            case 31: currentImage = image_31; break;
+            case 32: currentImage = image_32; break;
+            case 33: currentImage = image_33; break;
+            case 34: currentImage = image_34; break;
+            case 35: currentImage = image_35; break;
+            case 36: currentImage = image_36; break;
+            case 37: currentImage = image_37; break;
+            case 38: currentImage = image_38; break;
+            case 39: currentImage = image_39; break;
+            case 40: currentImage = image_40; break;
+            case 41: currentImage = image_41; break;
+            case 42: currentImage = image_42; break;
+            case 43: currentImage = image_43; break;
+            case 44: currentImage = image_44; break;
+            case 45: currentImage = image_45; break;
+            case 46: currentImage = image_46; break;
+            case 47: currentImage = image_47; break;
+            case 48: currentImage = image_48; break;
+            case 49: currentImage = image_49; break;
+            case 50: currentImage = image_50; break;
+            case 51: currentImage = image_51; break;
+            case 52: currentImage = image_52; break;
+            case 53: currentImage = image_53; break;
+            case 54: currentImage = image_54; break;
+            case 55: currentImage = image_55; break;
+            case 56: currentImage = image_56; break;
+            case 57: currentImage = image_57; break;
+            case 58: currentImage = image_58; break;
+            case 59: currentImage = image_59; break;
+            case 60: currentImage = image_60; break;
+            case 61: currentImage = image_61; break;
+            case 62: currentImage = image_62; break;
+            case 63: currentImage = image_63; break;
+            case 64: currentImage = image_64; break;
+            case 65: currentImage = image_65; break;
+            case 66: currentImage = image_66; break;
+            case 67: currentImage = image_67; break;
+            case 68: currentImage = image_68; break;
+            case 69: currentImage = image_69; break;
+            case 70: currentImage = image_70; break;
+            case 71: currentImage = image_71; break;
+            case 72: currentImage = image_72; break;
+            case 73: currentImage = image_73; break;
+            case 74: currentImage = image_74; break;
+            case 75: currentImage = image_75; break;
+            case 76: currentImage = image_76; break;
+            case 77: currentImage = image_77; break;
+            case 78: currentImage = image_78; break;
+            case 79: currentImage = image_79; break;
+            case 80: currentImage = image_80; break;
+            case 81: currentImage = image_81; break;
+            case 82: currentImage = image_82; break;
+            case 83: currentImage = image_83; break;
+            case 84: currentImage = image_84; break;
+            case 85: currentImage = image_85; break;
+            case 86: currentImage = image_86; break;
+            case 87: currentImage = image_87; break;
+            case 88: currentImage = image_88; break;
+            case 89: currentImage = image_89; break;
+            case 90: currentImage = image_90; break;
+            case 91: currentImage = image_91; break;
+            case 92: currentImage = image_92; break;
+            case 93: currentImage = image_93; break;
+            case 94: currentImage = image_94; break;
+            case 95: currentImage = image_95; break;
+            case 96: currentImage = image_96; break;
+            case 97: currentImage = image_97; break;
+            case 98: currentImage = image_98; break;
+            case 99: currentImage = image_99; break;
+            case 100: currentImage = image_100; break;
+            case 101: currentImage = image_101; break;
+            case 102: currentImage = image_102; break;
+            case 103: currentImage = image_103; break;
+            case 104: currentImage = image_104; break;
+            case 105: currentImage = image_105; break;
+            case 106: currentImage = image_106; break;
+            case 107: currentImage = image_107; break;
+            case 108: currentImage = image_108; break;
+            case 109: currentImage = image_109; break;
+            case 110: currentImage = image_110; break;
+            case 111: currentImage = image_111; break;
+            case 112: currentImage = image_112; break;
+            case 113: currentImage = image_113; break;
+            case 114: currentImage = image_114; break;
+            case 115: currentImage = image_115; break;
+            case 116: currentImage = image_116; break;
+            case 117: currentImage = image_117; break;
+            case 118: currentImage = image_118; break;
+            case 119: currentImage = image_119; break;
+            case 120: currentImage = image_120; break;
+            case 121: currentImage = image_121; break;
+            case 122: currentImage = image_122; break;
+            case 123: currentImage = image_123; break;
+            case 124: currentImage = image_124; break;
+            case 125: currentImage = image_125; break;
+            case 126: currentImage = image_126; break;
+            case 127: currentImage = image_127; break;
+            case 128: currentImage = image_128; break;
+            case 129: currentImage = image_129; break;
+            case 130: currentImage = image_130; break;
+            case 131: currentImage = image_131; break;
+            case 132: currentImage = image_132; break;
+            case 133: currentImage = image_133; break;
+            case 134: currentImage = image_134; break;
+            case 135: currentImage = image_135; break;
+            case 136: currentImage = image_136; break;
+            case 137: currentImage = image_137; break;
+            case 138: currentImage = image_138; break;
+            case 139: currentImage = image_139; break;
+            case 140: currentImage = image_140; break;
+            case 141: currentImage = image_141; break;
+            case 142: currentImage = image_142; break;
+            case 143: currentImage = image_143; break;
+            case 144: currentImage = image_144; break;
+            case 145: currentImage = image_145; break;
+            case 146: currentImage = image_146; break;
+            case 147: currentImage = image_147; break;
+            case 148: currentImage = image_148; break;
+            case 149: currentImage = image_149; break;
+            case 150: currentImage = image_150; break;
+            case 151: currentImage = image_151; break;
+            case 152: currentImage = image_152; break;
+            case 153: currentImage = image_153; break;
+            case 154: currentImage = image_154; break;
+            case 155: currentImage = image_155; break;
+            case 156: currentImage = image_156; break;
+            case 157: currentImage = image_157; break;
+            case 158: currentImage = image_158; break;
+            case 159: currentImage = image_159; break;
+            case 160: currentImage = image_160; break;
+            case 161: currentImage = image_161; break;
+            case 162: currentImage = image_162; break;
+            case 163: currentImage = image_163; break;
+            case 164: currentImage = image_164; break;
+            case 165: currentImage = image_165; break;
+            case 166: currentImage = image_166; break;
+            case 167: currentImage = image_167; break;
+            case 168: currentImage = image_168; break;
+            case 169: currentImage = image_169; break;
+            case 170: currentImage = image_170; break;
+            case 171: currentImage = image_171; break;
+            case 172: currentImage = image_172; break;
+            case 173: currentImage = image_173; break;
+            case 174: currentImage = image_174; break;
+            case 175: currentImage = image_175; break;
+            case 176: currentImage = image_176; break;
+            case 177: currentImage = image_177; break;
+            case 178: currentImage = image_178; break;
+            case 179: currentImage = image_179; break;
+            case 180: currentImage = image_180; break;
+            case 181: currentImage = image_181; break;
+            case 182: currentImage = image_182; break;
+            case 183: currentImage = image_183; break;
+            case 184: currentImage = image_184; break;
+            case 185: currentImage = image_185; break;
+            case 186: currentImage = image_186; break;
+            case 187: currentImage = image_187; break;
+            case 188: currentImage = image_188; break;
+            case 189: currentImage = image_189; break;
+            case 190: currentImage = image_190; break;
+            case 191: currentImage = image_191; break;
+            case 192: currentImage = image_192; break;
+            case 193: currentImage = image_193; break;
+            case 194: currentImage = image_194; break;
+            case 195: currentImage = image_195; break;
+            case 196: currentImage = image_196; break;
+            case 197: currentImage = image_197; break;
+            case 198: currentImage = image_198; break;
+            case 199: currentImage = image_199; break;
+            case 200: currentImage = image_200; break;
+            case 201: currentImage = image_201; break;
+            case 202: currentImage = image_202; break;
+            case 203: currentImage = image_203; break;
+            case 204: currentImage = image_204; break;
+            case 205: currentImage = image_205; break;
+            case 206: currentImage = image_206; break;
+            case 207: currentImage = image_207; break;
+            case 208: currentImage = image_208; break;
+            case 209: currentImage = image_209; break;
+            case 210: currentImage = image_210; break;
+            case 211: currentImage = image_211; break;
+            case 212: currentImage = image_212; break;
+            case 213: currentImage = image_213; break;
+            case 214: currentImage = image_214; break;
+            case 215: currentImage = image_215; break;
+            case 216: currentImage = image_216; break;
+            case 217: currentImage = image_217; break;
+            case 218: currentImage = image_218; break;
+            case 219: currentImage = image_219; break;
+            case 220: currentImage = image_220; break;
+            case 221: currentImage = image_221; break;
+            case 222: currentImage = image_222; break;
+            case 223: currentImage = image_223; break;
+            case 224: currentImage = image_224; break;
+            case 225: currentImage = image_225; break;
+            case 226: currentImage = image_226; break;
+            case 227: currentImage = image_227; break;
+            case 228: currentImage = image_228; break;
+            case 229: currentImage = image_229; break;
+            case 230: currentImage = image_230; break;
+            case 231: currentImage = image_231; break;
+            case 232: currentImage = image_232; break;
+            case 233: currentImage = image_233; break;
+            case 234: currentImage = image_234; break;
+            case 235: currentImage = image_235; break;
+            case 236: currentImage = image_236; break;
+            case 237: currentImage = image_237; break;
+            case 238: currentImage = image_238; break;
+            case 239: currentImage = image_239; break;
+            case 240: currentImage = image_240; break;
+            case 241: currentImage = image_241; break;
+            case 242: currentImage = image_242; break;
+            case 243: currentImage = image_243; break;
+            case 244: currentImage = image_244; break;
+            case 245: currentImage = image_245; break;
+            case 246: currentImage = image_246; break;
+            case 247: currentImage = image_247; break;
+            case 248: currentImage = image_248; break;
+            case 249: currentImage = image_249; break;
+            case 250: currentImage = image_250; break;
+            case 251: currentImage = image_251; break;
+            case 252: currentImage = image_252; break;
+            case 253: currentImage = image_253; break;
+            case 254: currentImage = image_254; break;
+            case 255: currentImage = image_255; break;
+            case 256: currentImage = image_256; break;
+            case 257: currentImage = image_257; break;
+            case 258: currentImage = image_258; break;
+            case 259: currentImage = image_259; break;
+            case 260: currentImage = image_260; break;
+            case 261: currentImage = image_261; break;
+            case 262: currentImage = image_262; break;
+            case 263: currentImage = image_263; break;
+            case 264: currentImage = image_264; break;
+            case 265: currentImage = image_265; break;
+            case 266: currentImage = image_266; break;
+            case 267: currentImage = image_267; break;
+            case 268: currentImage = image_268; break;
+            case 269: currentImage = image_269; break;
+            case 270: currentImage = image_270; break;
+            case 271: currentImage = image_271; break;
+            case 272: currentImage = image_272; break;
+            case 273: currentImage = image_273; break;
+            case 274: currentImage = image_274; break;
+            case 275: currentImage = image_275; break;
+            case 276: currentImage = image_276; break;
+            case 277: currentImage = image_277; break;
+            case 278: currentImage = image_278; break;
+            case 279: currentImage = image_279; break;
+            case 280: currentImage = image_280; break;
+            case 281: currentImage = image_281; break;
+            case 282: currentImage = image_282; break;
+            case 283: currentImage = image_283; break;
+            case 284: currentImage = image_284; break;
+            case 285: currentImage = image_285; break;
+            case 286: currentImage = image_286; break;
+            case 287: currentImage = image_287; break;
+            case 288: currentImage = image_288; break;
+            case 289: currentImage = image_289; break;
+            case 290: currentImage = image_290; break;
+            case 291: currentImage = image_291; break;
+            case 292: currentImage = image_292; break;
+            case 293: currentImage = image_293; break;
+            case 294: currentImage = image_294; break;
+            case 295: currentImage = image_295; break;
+            case 296: currentImage = image_296; break;
+            case 297: currentImage = image_297; break;
+            case 298: currentImage = image_298; break;
+            case 299: currentImage = image_299; break;
+            case 300: currentImage = image_300; break;
+            default: break;
+        }
+
+            repaint();
+
+    }
+
+
+    void setRangeFactor(float newRangeFactor) { rangeFactor = newRangeFactor; };
+    void setMinKnobValue(float newValue) { minKnobValue = newValue; };
+    void setMaxKnobValue(float newValue) { maxKnobValue = newValue; };
+    void setLabelEnding(juce::String newEnding){labelEnding = newEnding;};
+    
+    
+    
+    void drawLabel (juce::Graphics& g, juce::Label& label) override
+    {
+
+        if (label.isBeingEdited())
+        {
+            g.fillAll (juce::Colours::transparentBlack); // Transparent background during editing
+        }
+        else
+        {
+            // Make background and border transparent in non-editing state
+            g.fillAll (juce::Colours::transparentBlack);
+        }
+
+        g.setColour (juce::Colour::fromRGB(180,180,180));
+        g.setFont (juce::FontOptions(16.0f, juce::Font::bold));
+        juce::String labelText = label.getText();
+        double value = labelText.getDoubleValue();
+        
+        juce::String textOutput = juce::String (value) + labelEnding;  // 0 decimal places
+
+        g.drawFittedText (textOutput, label.getLocalBounds(), label.getJustificationType(), 1);
+    }
+
+
+private:
+
+};

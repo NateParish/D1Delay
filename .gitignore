@@ -1,41 +1,118 @@
-# Prerequisites
-*.d
+############################################################
+# OS junk
+############################################################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+############################################################
+# JUCE / Projucer build output
+############################################################
+# Projucer exports IDE projects into Builds/ by default
+Builds/
+**/Builds/
 
-# Precompiled Headers
-*.gch
+# Common build output folders (if you ever export elsewhere)
+bin/
+build/
+Build/
+out/
+Output/
+Release/
+Debug/
+x64/
+x86/
+ARM64/
+.ipch/
+
+############################################################
+# JUCE generated code (usually don't commit)
+############################################################
+JuceLibraryCode/
+**/JuceLibraryCode/
+
+############################################################
+# Xcode (macOS)
+############################################################
+*.xcworkspace
+*.xcuserstate
+*.xcbkptlist
+*.xcscmblueprint
+*.xccheckout
+*.xcsettings
+*.moved-aside
+DerivedData/
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.dSYM.tar
+
+# Per-user Xcode settings
+xcuserdata/
+**/xcuserdata/
+
+############################################################
+# Visual Studio / VSCode (Windows)
+############################################################
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+
+.vscode/
+*.code-workspace
+
+############################################################
+# CMake (if you later add CMake builds)
+############################################################
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+############################################################
+# Clang / IntelliSense / tooling caches
+############################################################
 *.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
+*.gch
+*.obj
+*.o
 *.a
 *.lib
-
-# Executables
+*.dll
+*.dylib
+*.so
 *.exe
-*.out
 *.app
+*.pkg
 
-# debug information files
-*.dwo
+############################################################
+# Logs and temp files
+############################################################
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+############################################################
+# Optional: installer/signing output (keep out of git)
+############################################################
+Signed Files/
+signed/
+installers/
+*.iss~
+
+############################################################
+# Optional: if you generate docs/screenshots locally
+############################################################
+docs/_build/
