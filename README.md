@@ -99,6 +99,11 @@ The plugin supports:
 
 ---
 
+## Notes
+
+This public repository omits the commercial licensing/authentication backend used in the shipped product.
+`AuthenticationLock` is implemented as a local stub to keep the project buildable for demonstration.
+
 ## Author
 
 Nate Parish  
