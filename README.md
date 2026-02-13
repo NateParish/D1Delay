@@ -1,116 +1,46 @@
 # D1 Digital Delay
 
-A fully custom-built digital delay plugin developed with JUCE 8.
+A cross-platform digital delay VST3 plugin built with JUCE (C++).
 
-D1 Delay is a stereo digital delay featuring BPM sync, ping-pong mode, high/low pass filtering, stereo width control, and a full preset system.
-
-Built from scratch with custom GUI rendering, DSP processing, and preset management.
-
----
+This repository is a portfolio/demo build showcasing custom DSP + a fully custom JUCE GUI, including a built-in preset system (factory presets + user save/load).
 
 ## Screenshots
 
+> Add images in `docs/screenshots/` and update paths below.
+
 ### Delay View
-![Delay Screen](docs/screenshots/delay-screen.png)
+![Delay View](docs/screenshots/delay-view.png)
 
 ### EQ View
-![EQ Screen](docs/screenshots/eq-screen.png)
+![EQ View](docs/screenshots/eq-view.png)
 
-### Preset Menu
+### Presets
 ![Presets](docs/screenshots/presets.png)
-
----
 
 ## Features
 
-- Stereo Digital Delay
-- BPM Sync (including time signatures)
-- Millisecond Mode
-- Ping-Pong Mode
-- Independent Left / Right Blend Control
-- High-pass and Low-pass Filtering
-- Adjustable Stereo Width
-- Custom Preset System
-    - Built-in Presets
-    - Save User Presets
-    - Load Custom Presets
-- Custom-drawn GUI components
-- JUCE 8 Framework
-- Fully C++ implementation
+- Stereo digital delay
+- BPM sync + ms mode
+- Ping-pong mode
+- Feedback + mix control
+- High-pass and low-pass filtering
+- Stereo width control and L/R blend controls
+- Factory presets + user preset save/load
+- Custom-drawn UI (knobs, toggles, graphs/visualizations)
 
----
+## Build
 
-## DSP Overview
-
-The delay engine supports:
-
-- Sample-accurate delay timing
-- Feedback routing
-- Ping-pong channel alternation
-- Real-time filter adjustment
-- Width manipulation via stereo channel scaling
-- Smooth parameter transitions
-
-All DSP processing is written in C++ using JUCE DSP modules.
-
----
-
-## UI Architecture
-
-The GUI is entirely custom rendered using JUCE Graphics:
-
-- Custom knobs
-- Custom toggle switches
-- Custom drawn delay visualization
-- Animated EQ curve
-- Real-time parameter display
-- Custom preset dropdown
-
-No stock UI components used beyond base JUCE elements.
-
----
-
-## Preset System
-
-The plugin supports:
-
-- Built-in factory presets
-- User-created presets
-- Save / Load functionality
-- Real-time preset switching
-
----
-
-## Build Instructions
-
-1. Install JUCE 8
+1. Install JUCE (tested with JUCE 8.x)
 2. Open `D1Delay.jucer` in Projucer
-3. Select exporter (Xcode / Visual Studio)
-4. Open generated project
-5. Build VST3 or AU target
-
----
-
-## Requirements
-
-- JUCE 8
-- macOS or Windows
-- C++17 compatible compiler
-
----
+3. Set your global JUCE modules path
+4. Export (Xcode / Visual Studio)
+5. Build the VST3 target
 
 ## Notes
 
-This public repository omits the commercial licensing/authentication backend used in the shipped product.
-`AuthenticationLock` is implemented as a local stub to keep the project buildable for demonstration.
+The production version includes a commercial licensing/authentication system.
+This public repo uses a local stub so the demo project builds and runs without network dependencies.
 
 ## Author
 
-Nate Parish  
-Parish Audio
-
----
-
-## License
-
-This project is provided for demonstration purposes.
+Nate Parish
