@@ -2,7 +2,7 @@
 
 A fully custom-built digital delay plugin developed with **JUCE 8** (C++).
 
-**D1 Digital Delay** is a stereo delay featuring BPM-synced timing, millisecond mode, ping-pong routing, high/low-pass filtering, stereo width control, and a complete preset system (factory + user presets). The GUI is custom rendered (knobs, switches, and visualizations) to resemble a stompbox-style hardware unit.
+**D1 Digital Delay** is a stereo delay featuring BPM-synced timing, millisecond mode, ping-pong routing, high/low-pass filtering, stereo width control, and a complete preset system (factory + user presets). The GUI is custom rendered (knobs, switches, and visualizations) to resemble a rack-style hardware unit.
 
 ---
 
