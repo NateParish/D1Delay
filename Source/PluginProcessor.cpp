@@ -118,8 +118,6 @@ void D1DelayAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBloc
 
 void D1DelayAudioProcessor::releaseResources()
 {
-    // When playback stops, you can use this as an opportunity to free up any
-    // spare memory, etc.
     delayBufferLeft.clear();
     delayBufferRight.clear();
 }
@@ -131,10 +129,6 @@ bool D1DelayAudioProcessor::isBusesLayoutSupported (const BusesLayout& layouts) 
     juce::ignoreUnused (layouts);
     return true;
   #else
-    // This is the place where you check if the layout is supported.
-    // In this template code we only support mono or stereo.
-    // Some plugin hosts, such as certain GarageBand versions, will only
-    // load plugins that support stereo bus layouts.
     if (layouts.getMainOutputChannelSet() != juce::AudioChannelSet::mono()
      && layouts.getMainOutputChannelSet() != juce::AudioChannelSet::stereo())
         return false;
@@ -158,8 +152,7 @@ void D1DelayAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce
     
     juce::ScopedNoDenormals noDenormals;
     const int numSamples = buffer.getNumSamples();
-    const int numChannels = buffer.getNumChannels(); // use this instead of getTotalNumInputChannels()
-    // Get current BPM
+    const int numChannels = buffer.getNumChannels(); 
     if (auto* playHead = getPlayHead())
     {
         juce::AudioPlayHead::CurrentPositionInfo posInfo;

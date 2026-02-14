@@ -77,45 +77,46 @@ public:
     bool getTimeBpm(){return timeBpm.load();};
     int getBPMSelection(){return bpmKnobSelection;};
     void setTimeBpm(int bpmSelection){
-    if(bpmSelection == 0)
-    {
-        bpmKnobSelection = 0;
-        this->timeBpm.store(0.125);
         
-    }
-    if(bpmSelection == 1)
-    {
-        bpmKnobSelection = 1;
-        this->timeBpm.store(0.25);
-        
-    }
-    if(bpmSelection == 2)
-    {
-        bpmKnobSelection = 2;
-        this->timeBpm.store(0.5);
-        
-    }
-    if(bpmSelection == 3)
-    {
-        bpmKnobSelection = 3;
-        this->timeBpm.store(1.f);
-    }
-    if(bpmSelection == 4)
-    {
-        bpmKnobSelection = 4;
-        float oneThird = 4.0f/3.0f;
-        this->timeBpm.store(oneThird);
-    }
-    if(bpmSelection == 5)
-    {
-        bpmKnobSelection = 5;
-        this->timeBpm.store(2.f);
-    }
-    if(bpmSelection == 6)
-    {
-        bpmKnobSelection = 6;
-        this->timeBpm.store(4.f);
-    }
+        if(bpmSelection == 0)
+        {
+            bpmKnobSelection = 0;
+            this->timeBpm.store(0.125);
+            
+        }
+        if(bpmSelection == 1)
+        {
+            bpmKnobSelection = 1;
+            this->timeBpm.store(0.25);
+            
+        }
+        if(bpmSelection == 2)
+        {
+            bpmKnobSelection = 2;
+            this->timeBpm.store(0.5);
+            
+        }
+        if(bpmSelection == 3)
+        {
+            bpmKnobSelection = 3;
+            this->timeBpm.store(1.f);
+        }
+        if(bpmSelection == 4)
+        {
+            bpmKnobSelection = 4;
+            float oneThird = 4.0f/3.0f;
+            this->timeBpm.store(oneThird);
+        }
+        if(bpmSelection == 5)
+        {
+            bpmKnobSelection = 5;
+            this->timeBpm.store(2.f);
+        }
+        if(bpmSelection == 6)
+        {
+            bpmKnobSelection = 6;
+            this->timeBpm.store(4.f);
+        }
     };
     
     float getBPM(){return bpm.load();};
